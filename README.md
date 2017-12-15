@@ -16,9 +16,9 @@ To learn more about WebExtension development and debugging, go to [MDN Web Docs 
 
 # Roadmap
 
-    * [] - Add error checking for missing native sbot app.
-    * [] - Add support for private messages.
-    * [] - Add helper for mentioning friends.
+* [] - Add error checking for missing native sbot app.
+* [] - Add support for private messages.
+* [] - Add helper for mentioning friends.
 
 # Contributing
 

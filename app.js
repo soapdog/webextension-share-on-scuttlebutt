@@ -9,6 +9,12 @@ console.log("port", port);
 /*
 Listen for messages from the app.
 */
+
+port.onDisconnect.addListener(data => {
+    console.log("disconnect", data);
+})
+
+
 port.onMessage.addListener(response => {
     console.log("Received: ", response);
 
@@ -41,9 +47,6 @@ function enablePublishAction() {
 function displayErrorNotification(error) {
     let errorTemplate = document.getElementById("error-post-notification").innerHTML;
     let notificationEl = document.getElementById("notification");
-    let re = /smblink/gi
-
-    errorTemplate = errorTemplate.replace(re, post.key);
 
     notificationEl.insertAdjacentHTML("beforeend", errorTemplate);
     bindCloseNotificationButton();
@@ -53,6 +56,9 @@ function displayErrorNotification(error) {
 function displaySuccessNotification(post) {
     let successTemplate = document.getElementById("success-post-notification").innerHTML;
     let notificationEl = document.getElementById("notification");
+    let re = /smblink/gi
+
+    successTemplate = successTemplate.replace(re, post.key);
 
     notificationEl.insertAdjacentHTML("beforeend", successTemplate);
     bindCloseNotificationButton();

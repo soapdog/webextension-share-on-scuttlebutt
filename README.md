@@ -6,7 +6,7 @@ This is an **ALPHA** quality WebExtension for Firefox to add a sidebar that enab
 
 This add-on depends on a _native app_ that needs to be correctly setup for it to work. It works by using the [Native Messaging API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Native_messaging) to communicate with a bundled _sbot_.
 
-Go to [sbot native app]() first and setup that app to be able to use this add-on.
+Go to [sbot native app](https://github.com/soapdog/sbot_native_app) first and setup that app to be able to use this add-on.
 
 # How to install the add-on
 
